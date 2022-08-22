@@ -325,7 +325,7 @@ footer {
     font-weight: bold;
 }
 
-.content-all {
+.content-first {
     background-color: #f1efef;
 
     display: flex;
@@ -370,12 +370,81 @@ footer {
 
     -webkit-box-shadow: 3px 4px 11px -5px #000000; 
     box-shadow: 3px 4px 11px -5px #000000;
+    transition: all 0.5s;
 }
-
+.container-infos > .content-title > button:hover {
+    transform: scale(1.1);
+}
+.container-infos > .content-title > button:active {
+    background-color: #aefdb5;
+}
 .content-infos > img {
     width: 400px;
 
     padding-left: 10%;
+}
+.content-second {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 2%;
+    margin: 0 10%;
+} 
+.content-second-title {
+    border-bottom: #256cca solid;
+    
+}
+.content-second-title > span {
+    display: flex;
+    justify-content: center;
+
+    font-family: 'Anton', sans-serif;
+}
+.content-second-title > span:nth-child(2){
+    font-size: xx-large;
+}
+.content-second-video > iframe {
+    width: 800px;
+    height: 400px;
+
+    margin-top: 25px;
+}
+
+
+.content-third {
+    -webkit-box-shadow: 0px -7px 11px 1px rgba(216,216,216,0.53); 
+    box-shadow: 0px -7px 11px 1px rgba(216,216,216,0.53);
+    background-color: #f1efef;
+
+    display: flex;
+
+    padding: 2%;
+    margin: 0 10%;
+}
+.container-third-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.container-third-img > img {
+    width: 50%;
+    margin-left: 25%;
+}
+.container-third-infos > h1 {
+    padding-bottom: 5%;
+}
+.container-third-infos > ul > li {
+    list-style: none;
+
+    font-size: large;
+
+    padding-top: 15px;
+
+    color:#425387;
+}
+.container-third-infos > ul > li > img {
+    padding-right: 20px;
 }
 
 @media (max-width: 700px) {
@@ -466,4 +535,36 @@ footer {
     .form-title > h1 {
         font-size: 20px;
     }
+
+    .content-first, .content-second, .content-third {
+        width: 100%;
+        margin: 0;
+        padding: 5%;
+    }
+    .container-infos {
+        flex-flow: column-reverse;
+    }
+    .content-infos > img {
+        width: 200px;
+        padding-left: 0;
+    }
+    .content-second-title > span {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .container-infos > .content-title > button {
+        width: 50%;
+    }
+    .content-second-video > iframe {
+        width: 100%;
+        height: 400px;
+        margin-top: 25px;
+    }
+    .container-third-container {
+        flex-flow: column-reverse;
+    }
+    .content-second {
+        margin-top: 10px;
+    }
+    
 }
