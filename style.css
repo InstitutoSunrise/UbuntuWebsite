@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Joan&family=Libre+Baskerville&family=Raleway:wght@100;300&family=Tiro+Devanagari+Marathi&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Joan&family=Libre+Baskerville&family=Raleway:wght@100;300&family=Source+Serif+Pro:wght@300&family=Tiro+Devanagari+Marathi&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Joan&family=Libre+Baskerville&family=Raleway:wght@100;300&family=Roboto:wght@500&family=Source+Serif+Pro:wght@300&family=Tiro+Devanagari+Marathi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Cabin&display=swap');
 
 #preloader {
     position:fixed;
@@ -134,6 +136,12 @@
     font-family: 'Raleway', sans-serif;
     font-family: 'Source Serif Pro', serif;
     font-family: 'Tiro Devanagari Marathi', serif;
+}
+.a-header > a:last-child {
+    color: white;
+    background-color: #256cca;
+
+    border-radius: 4px;
 }
 
 .mobile-menu-icon, .mobile-menu {
@@ -317,6 +325,58 @@ footer {
     font-weight: bold;
 }
 
+.content-all {
+    background-color: #f1efef;
+
+    display: flex;
+    justify-content: center;
+
+    padding: 2%;
+    margin: 0 10%;
+}
+.container-infos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.container-infos > .content-title {
+    display: flex;
+    flex-direction: column;
+}
+.container-infos > .content-title > span {
+    font-family: 'Anton', sans-serif;
+    font-size: xx-large;
+
+    word-wrap: break-word;
+
+    margin-bottom: 20px;
+
+    border-bottom: rgb(201, 201, 201) solid 1px;
+}
+.container-infos > .content-title > h6 {
+    margin-bottom: 20px;
+
+    font-size: small;
+}
+.container-infos > .content-title > button {
+    border: 0;
+    width: 30%;
+    padding: 5px 10px;
+
+    font-family: 'Anton', sans-serif;
+    font-family: 'Cabin', sans-serif;
+
+    background-color: white;
+
+    -webkit-box-shadow: 3px 4px 11px -5px #000000; 
+    box-shadow: 3px 4px 11px -5px #000000;
+}
+
+.content-infos > img {
+    width: 400px;
+
+    padding-left: 10%;
+}
 
 @media (max-width: 700px) {
     .content-header {
